@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashish Dogra - AI Innovator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+        :root {
+            --primary-color: #00ff00;
+            --background-color: #000000;
+            --text-color: #ffffff;
+        }
+
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid var(--primary-color);
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            box-shadow: 0 0 10px var(--primary-color);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item {
+            margin-bottom: 1rem;
+        }
+
+        .company {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .date {
+            font-style: italic;
+            color: #888;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            padding: 0.25rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <canvas class="matrix-bg" id="matrix"></canvas>
+
+    <div class="container">
+        <header>
+            <h1>Ashish Dogra</h1>
+            <div class="subtitle">CTO | Builder | AI Innovator | IIT Roorkee Alumnus</div>
+        </header>
+
+        <section class="section" id="summary">
+            <h2>Summary</h2>
+            <p>Passionate CTO and co-founder with a strong background in AI, healthtech, and SaaS. Expertise in creating innovative and scalable solutions, leading development teams, and driving technological advancements in various domains including edtech, jobtech, and AI-driven healthcare.</p>
+        </section>
+
+        <section class="section" id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <div class="company">Stealth AI Startup</div>
+                <div class="position">Founder</div>
+                <div class="date">August 2024 - Present</div>
+                <p>Building B2B Agentic SaaS for Enterprises</p>
+            </div>
+            <div class="experience-item">
+                <div class="company">LH2 Holdings</div>
+                <div class="position">CoFounder - CTO</div>
+                <div class="date">April 2024 - August 2024</div>
+                <p>Building next-generation Ad-Tech SaaS Stack with AI integration</p>
+            </div>
+            <div class="experience-item">
+                <div class="company">AASA</div>
+                <div class="position">Co-Founder and CTO</div>
+                <div class="date">December 2023 - May 2024</div>
+                <p>Developed AI-driven healthcare products, including an AI prescription writer leveraging GenAI technology</p>
+            </div>
+            <div class="experience-item">
+                <div class="company">FastHR AI</div>
+                <div class="position">Founder and CTO</div>
+                <div class="date">January 2023 - December 2023</div>
+                <p>Led the development of an AI-powered talent screening platform using GPT-4, revolutionizing the hiring process for companies</p>
+            </div>
+            <div class="experience-item">
+                <div class="company">Unacademy (PrepLadder)</div>
+                <div class="position">Team Lead</div>
+                <div class="date">March 2021 - December 2021</div>
+                <p>Led technical teams in developing and improving educational technology solutions</p>
+            </div>
+            <div class="experience-item">
+                <div class="company">Saratech Software Pvt Ltd</div>
+                <div class="position">CTO and Tech Lead</div>
+                <div class="date">January 2019 - August 2021</div>
+                <p>Oversaw development of diverse projects including railway apps and voice-to-text vernacular translators for government and private sectors</p>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill">Generative AI</span>
+                <span class="skill">SaaS Development</span>
+                <span class="skill">Start-up Leadership</span>
+                <span class="skill">Business Ownership</span>
+                <span class="skill">AI/ML</span>
+                <span class="skill">Chatbots</span>
+                <span class="skill">Material-UI</span>
+                <span class="skill">Education Technology</span>
+                <span class="skill">Healthcare Tech</span>
+                <span class="skill">Team Management</span>
+                <span class="skill">Product Development</span>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Indian Institute of Technology, Roorkee</strong><br>
+                    Bachelor's degree, Electrical and Electronics Engineering<br>
+                    2009 - 2013
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <script>
+        // Matrix background effect
+        const canvas = document.getElementById('matrix');
+        const ctx = canvas.getContext('2d');
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const katakana = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン';
+        const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        const nums = '0123456789';
+
+        const alphabet = katakana + latin + nums;
+
+        const fontSize = 16;
+        const columns = canvas.width / fontSize;
+
+        const rainDrops = [];
+
+        for (let x = 0; x < columns; x++) {
+            rainDrops[x] = 1;
+        }
+
+        const draw = () => {
+            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = '#0F0';
+            ctx.font = fontSize + 'px monospace';
+
+            for (let i = 0; i < rainDrops.length; i++) {
+                const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+                ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+
+                if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                    rainDrops[i] = 0;
+                }
+                rainDrops[i]++;
+            }
+        };
+
+        setInterval(draw, 30);
+
+        // GSAP animations
+        gsap.from(".section", {
+            duration: 1,
+            opacity: 0,
+            y: 50,
+            stagger: 0.2,
+            ease: "power3.out"
+        });
+    </script>
+</body>
+</html>
